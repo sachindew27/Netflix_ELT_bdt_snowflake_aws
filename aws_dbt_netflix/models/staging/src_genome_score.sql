@@ -1,5 +1,5 @@
 WITH raw_genome_scores AS (
-  SELECT * FROM MOVIELENS.RAW.RAW_GENOME_SCORES
+  SELECT * FROM {{ source('netflix', 'r_genome_scores') }}
 )
 
 SELECT

@@ -1,5 +1,5 @@
 WITH raw_links AS (
-  SELECT * FROM MOVIELENS.RAW.RAW_LINKS
+  SELECT * FROM {{ source('netflix', 'r_links') }}
 )
 
 SELECT
